@@ -116,11 +116,11 @@ $(function() {
 		</div>
 		<div class="coats">
 			<h3 class="c-head">Contact US</h3>
-			
 		</div>
+
+
 		<div class="contact-box">
-			<div class="form">
-            
+			<!-- <div class="form">   
             <form method="post" action="sendmail.php">
 			
 
@@ -161,8 +161,57 @@ $(function() {
 				<input type="submit" value="send"/>
 			</div>
             </form>
-            </div>
+            </div> -->
+
+
+
+
+<form method="post" action="contactform.php">
+	
+
+					<!-- start .cform -->
+						<div class="cform" id="contact-form">
+							<div id="sendmessage">
+								 Your message has been sent. Thank you!
+							</div>
+                            <div id="errormessage"></div>
+							<form action="" method="post" role="form" class="contactForm">
+							  <div class="form-group">
+								<label for="name">Your Name</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							  </div>
+							  <div class="form-group">
+								<label for="email">Your Email</label>
+								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							  </div>
+							  <div class="form-group">
+								<label for="subject">Subject</label>
+								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							  </div>
+							  <div class="form-group">
+								<label for="message">Message</label>
+								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+								<div class="validation"></div>
+							  </div>
+							  
+							  <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+							</form>
+
+						</div><!-- end .cform -->
+
+<div class="clearfix"></div>
+</form>
 		</div>
+
+
+
+
+
+
+
 		<div class="look">
 						<h3>You May Also Like</h3>
 					</div>
@@ -207,6 +256,7 @@ $(function() {
 					<!-- Partners Ends Here -->
 			<!-- Footer Menu Starts here -->
 		<div class="footer">
+		<div class="look">
 			<div class="row footer-row">
 				<div class="col-md-4 footer-col">
 					<h3 class="ft-title">Products</h3>
@@ -232,8 +282,6 @@ $(function() {
 					<h3 class="ft-title">GS Customs</h3>
 					<ul class="ft-list list-h">
 						<li><a href="about.html">About us</a></li>
-						
-						
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
@@ -249,7 +297,8 @@ $(function() {
 				<div class="clearfix"></div>
 			</div>
 		</div>
-		<!-- Footer Menu Ends here --->
+		</div>
+		<!-- Footer Menu Ends here -->
 	</div>
 </section>
 </div>
